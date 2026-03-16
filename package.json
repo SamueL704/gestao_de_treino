@@ -4,17 +4,28 @@
   "description": "gestão de treinos",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "app.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx --watch src/index.ts"
   },
-  "dependencies": {
-    "@types/node": "^24.11.0",
-    "typescript": "^5.9.3"
+  "engines": {
+    "node": "24.x"
   },
   "devDependencies": {
+    "@types/node": "^24.12.0",
     "eslint": "^9.39.2",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.1",
+    "prisma": "^7.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.4.0",
+    "@prisma/client": "^7.4.0",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.7.4",
+    "fastify-type-provider-zod": "^6.1.0",
+    "nvm": "^0.0.4",
+    "zod": "^4.3.6"
   }
 }
